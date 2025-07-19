@@ -420,7 +420,261 @@
     background: var(--primary);
     border-color: var(--primary);
 }
+/* blogs */
+  .blog-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  }
 
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .blog-meta i {
+    color: #06BBCC;
+    margin-right: 5px;
+  }
+
+  .btn-style1 {
+    background-color: #06BBCC;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .btn-style1:hover {
+    background-color: #181d38;
+    color: #fff;
+  }
+
+  .blog-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .entry-title a {
+    color:#181d38;
+    text-decoration: none;
+  }
+
+  .entry-title a:hover {
+    color: #06BBCC;
+  }
+
+  .blog-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: 0.3s;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .blog-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-meta i {
+    color: #06BBCC;
+    margin-right: 5px;
+  }
+  
+
+  .entry-title a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .entry-title a:hover {
+    color: #06BBCC;
+  }
+
+  .btn-style1 {
+    background-color: #06BBCC;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .btn-style1:hover {
+    background-color: #181d38;
+    color: #fff;
+  }
+
+  .sidebar-box {
+    padding: 25px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+
+  .sidebar-title {
+    font-weight: bold;
+    color: #181d38;
+    border-bottom: 2px solid #06BBCC;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+  }
+
+  .category-list li {
+    margin-bottom: 8px;
+    list-style: none;
+  }
+
+  .category-list li a {
+    text-decoration: none;
+    color: #181d38;
+    font-size: 15px;
+  }
+
+  .category-list li a:hover {
+    color: #06BBCC;
+  }
+/* tags  */
+.category-list li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--dark);
+  font-size: 15px;
+  transition: 0.3s;
+  padding: 6px 0;
+}
+
+.category-list li a:hover {
+  color: var(--primary);
+  transform: translateX(5px);
+}
+
+.tag-container .tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  color: var(--dark);
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.tag-container .tag:hover {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  box-shadow: 0 0 8px rgba(6, 187, 204, 0.4);
+}
+
+/* Background & base styles */
+.support-box {
+  padding: 40px 0;
+  /* background: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png'); */
+  background-color: var(--light);
+}
+
+/* Wrapper styles */
+.support-wrapper {
+  background: #fff;
+  border-left: 5px solid var(--primary);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 20px 30px;
+  max-width: 960px;
+  margin: 0 auto;
+  transition: all 0.4s ease-in-out;
+}
+
+/* Animation effects */
+.animate-support {
+  transform: scale(0.95);
+  opacity: 0;
+  animation: supportFadeIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes supportFadeIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Glow effect */
+.glow-on-appear:hover {
+  box-shadow: 0 0 20px rgba(6, 187, 204, 0.3);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Icon */
+.support-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Text styles */
+.support-wrapper h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.support-wrapper p {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+}
+
+/* Link styling */
+.support-link {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.support-link:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* Button styling */
+.support-btn {
+  background-color: #fff;
+  color: var(--primary);
+  font-weight: 600;
+  padding: 10px 24px;
+  border-radius: 30px;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid var(--primary);
+}
+
+.support-btn:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
 
 /*** Footer ***/
 .footer .btn.btn-social {
