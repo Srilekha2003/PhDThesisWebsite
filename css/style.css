@@ -149,7 +149,34 @@
         opacity: 1;
     }
 }
+/* Highlight input and textarea on focus */
+  input:focus, textarea:focus {
+    border-color: #06BBCC!important;
+    box-shadow:  #181d38 !important;
+  }
 
+  /* Emoji button style */
+  .rating-btn {
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100px;
+    transition: all 0.3s ease;
+  }
+
+  .rating-btn img {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+
+  .rating-btn:hover,
+  .rating-btn.active {
+    border-color: #06BBCC;
+    background-color: #eef8e9;
+    color: #06BBCC;
+  }
 
 /*** Header carousel ***/
 @media (max-width: 768px) {
