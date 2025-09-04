@@ -281,6 +281,38 @@
         </div>
     </div>
     <!-- Footer End -->
+     <!-- WhatsApp Chat Widget Start -->
+        <div class="whatsapp-widget">
+            <!-- Floating Button -->
+            <div class="whatsapp-button" onclick="toggleWhatsApp()">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            </div>
+
+            <!-- Chat Box -->
+            <div class="whatsapp-box" id="whatsappBox">
+                <div class="whatsapp-header">
+                    <h5>S2S Web Solutions</h5>
+                    <small>Typically replies within a minute</small>
+                </div>
+                <div class="whatsapp-body">
+                    <p>👋 Hi there!<br>How can we help you today?</p>
+                </div>
+                <div class="whatsapp-footer">
+                    <a href="https://wa.me/919703180922?text=Hi%20S2S%20Web%20Solutions%2C%20I%20need%20your%20help!"
+                        target="_blank">
+                        Start Chat
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function toggleWhatsApp() {
+                var box = document.getElementById("whatsappBox");
+                box.style.display = (box.style.display === "block") ? "none" : "block";
+            }
+        </script>
+        <!-- WhatsApp Chat Widget End -->
 
 
     <!-- Back to Top -->
